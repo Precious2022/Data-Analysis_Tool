@@ -13,7 +13,7 @@ def load_data(file_path, chunk_size=None):
 def clean_data(df):
     """Clean and preprocess data."""
     df['Date'] = pd.to_datetime(df['Date'])  # Convert Date column to datetime
-    df.set_index('Date', inplace=True)       # Set Date as index
+    df.set_index('Date', inplace=True)       # This set Date as index
 
 def analyze_data(df):
     """Perform data analysis."""
